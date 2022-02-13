@@ -3,6 +3,7 @@ import {useState, useRef, useEffect} from 'react';
 import Modal from '../components/Modal'
 import styles from '../styles/Home.module.css'  
 import Image from 'next/image';
+import Head from 'next/head'
 
 function App() {
   const [modalOpen, setModalOpen] = useState(true)
@@ -47,6 +48,9 @@ function App() {
   
   return (
     <div ref={main} className={styles.main}>
+        <Head>
+          <title>Teo and Yuriko || Wedding Album </title>
+        </Head>
         <h1 className={styles.toptitle}>Teo Peralez and Yuriko Ara</h1>
         <h2 className={styles.subtitle}>Married July 12, 2021 - Photographed February 7, 2022</h2>
         
