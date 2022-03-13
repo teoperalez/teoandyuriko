@@ -26,8 +26,7 @@
   background-image: url("/background.png");
   background-repeat: no-repeat;
   background-position: center;
-  object-fit: contain;
-  overflow-y: hidden;
+  object-fit: cover;
   flex: 1;
   display: flex;
   flex-direction: column;

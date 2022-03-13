@@ -22,19 +22,33 @@
     justify-content: center;
 }
 
-.close {
+.close, .next, .prev {
     background-color: transparent;
     position: absolute;
-    top: 7vh;
-    right: 5vw;
     border: none;
     font-size: x-large;
+    font-weight:900;
     color: white;
     padding: 1rem;
     border-radius: 1rem;
 }
 
-.close:hover {
+.close {
+    top: 7vh;
+    right: 5vw;
+}
+
+.prev {
+    left:0
+}
+
+.next {
+    right: 0
+}
+
+.close:hover,
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.288);
 }
 
