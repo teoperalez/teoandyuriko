@@ -5,6 +5,12 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image';
 import Head from 'next/head'
 
+export const metadata = {
+  icons: {
+    icon: '/favicon.ico', 
+  },
+}
+
 function App() {
   const [modalOpen, setModalOpen] = useState(true)
   const [white, setWhite] = useState(true)
@@ -50,6 +56,7 @@ function App() {
     <div>
         <Head>
           <title>Teo and Yuriko || Wedding Album </title>
+          <link rel="icon" type="image/x-icon" href="./favicon.ico"></link>
         </Head>
         <main ref={main} className={ styles.main}>
         <h1 className={styles.toptitle}>Teo Peralez and Yuriko Ara</h1>
