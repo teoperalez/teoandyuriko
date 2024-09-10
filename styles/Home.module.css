@@ -80,6 +80,12 @@
 .card:hover {
     transform: scale(1.05)
 }
+
+.modal-open {
+  position: fixed;
+  overflow: hidden;
+}
+
 @media (max-width: 35rem) {
 	.wrapper {
 		overflow-x: auto;
